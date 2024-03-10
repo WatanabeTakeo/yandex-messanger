@@ -1,0 +1,19 @@
+.error-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  &__main {
+    margin-bottom: 70px;
+
+    &-title {
+      font-size: 4rem;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+

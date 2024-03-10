@@ -1,0 +1,16 @@
+.form {
+  min-height: 340px;
+  width: 280px;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  margin-bottom: 15px;
+
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+  }
+}

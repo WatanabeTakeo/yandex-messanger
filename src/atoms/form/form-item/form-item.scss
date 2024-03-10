@@ -1,0 +1,44 @@
+.form {
+  &__item {
+    position: relative;
+    vertical-align: top;
+
+    &-validation {
+      color: #FF2F2F;
+      display: none;
+      font-size: .5rem;
+      text-align: left;
+      transition: .3s;
+    }
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid #3369F3;
+    color: #1E1E1E;
+    cursor: pointer;
+    font-weight: 500;
+    height: 35px;
+    outline: none;
+    width: 100%;
+
+    &:focus ~ .form__label, &:not(:focus):valid ~ .form__label {
+      font-size: 0.7rem;
+      left: 0;
+      top: -20px;
+    }
+  }
+
+  &__label {
+    color: #999;
+    font-weight: 500;
+    left: 0;
+    line-height: 40px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transition: .3s;
+    white-space: nowrap;
+  }
+}
