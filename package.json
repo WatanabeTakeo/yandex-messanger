@@ -1,0 +1,33 @@
+{
+  "name": "yandex-messenger",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "server": "node server.js",
+    "start": "npm run build && npm run server",
+    "preview": "vite preview"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "autoprefixer": "^10.4.17",
+    "browserslist": "^4.23.0",
+    "handlebars": "^4.7.8",
+    "postcss": "^8.4.35",
+    "postcss-nested": "^6.0.1",
+    "sass": "^1.71.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "express": "^4.19.1"
+  }
+}

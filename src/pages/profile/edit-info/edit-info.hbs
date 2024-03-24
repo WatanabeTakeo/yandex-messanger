@@ -1,0 +1,38 @@
+<div class="content page_profile page_profile__edit">
+  <a class="button_back" href="/chats">
+    <div class="rotate_svg_180">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="14" cy="14" r="14" fill="#3369F3"/>
+        <rect x="8" y="13.2" width="11" height="1.6" fill="white"/>
+        <path d="M15 9L19 14L15 19" stroke="white" stroke-width="1.6"/>
+      </svg>
+    </div>
+  </a>
+
+  <form action="/profile" class="profile__content">
+
+    <label class="profile__logo">
+      <input class="profile__logo-input" type="file" name="avatar">
+    </label>
+
+    <div class="profile__name">{{name}}</div>
+
+    <div class="profile__fields">
+
+      {{#each fields}}
+        <div class="profile__field">
+          <div class="profile__field-name">{{title}}</div>
+          <div class="profile__field-value">
+            <input type="text" name="{{fieldName}}" value="{{fieldValue}}">
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <div class="profile__buttons">
+      <button class="button" style="width:{{button.width}}px;" onclick="window.location.href ='{{ button.url }}'">
+        {{ button.text }}
+      </button>
+    </div>
+
+  </form>
+</div>

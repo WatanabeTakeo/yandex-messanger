@@ -1,0 +1,16 @@
+<article class="chat-card">
+  <div class="chat-card__avatar">
+    {{> Avatar src=avatar.src alt=avatar.alt width=47 height=47 }}
+  </div>
+  <div class="chat-card__content">
+    <h3 class="chat-card__title">{{ name }}</h3>
+    <p class="chat-card__message">
+      {{# if message.self }}<span class="chat-card__message_self">You:</span>{{/if}}
+      {{ message.text }}
+    </p>
+  </div>
+  <div class="chat-card__info">
+    <p class="chat-card__date">{{ date }}</p>
+    {{# if notice }} {{> Badge number=notice.number }} {{/if}}
+  </div>
+</article>
