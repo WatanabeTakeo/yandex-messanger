@@ -11,6 +11,9 @@
   "browserslist": [
     "defaults"
   ],
+  "engines": {
+    "node": ">=12"
+  },
   "devDependencies": {
     "@types/node": "^20.11.20",
     "autoprefixer": "^10.4.17",
