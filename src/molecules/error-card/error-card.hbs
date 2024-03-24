@@ -1,8 +1,8 @@
 <article class="error-card">
   <div class="error-card__main">
-    {{> Title class='error-card__main-title' text='404'}}
-    {{> Subtitle text='This page does not exist' }}
+    {{> Title class='error-card__main-title' text=error-code }}
+    {{> Subtitle text=error-message }}
   </div>
 
-  {{> Link text='Back to chats' }}
+  {{> Link src=link.src text=link.text }}
 </article>

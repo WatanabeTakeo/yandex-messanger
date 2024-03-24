@@ -1,1 +1,8 @@
-<button type="{{type}}" class="button">{{text}}</button>
+<button type="{{#if type }}{{type}}{{else}}button{{/if}}" class="button">
+  {{#if text}}
+    {{text}}
+  {{/if}}
+  {{#if image}}
+    <img src="{{image}}">
+  {{/if}}
+</button>

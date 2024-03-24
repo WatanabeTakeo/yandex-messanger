@@ -1,13 +1,14 @@
 {{#> Dialog }}
   <form class="form">
-    {{> FormTitle text='Sign in' }}
+    {{> FormTitle text=title }}
     <div class="form__input-group">
-      {{> FormItem text='Login' type='text' validation-text='Неверный логин' }}
-      {{> FormItem text='Password' type='password' }}
+      {{#each fields}}
+        {{> FormItem name=name text=text type=type validation-text=validation-text }}
+      {{/each}}
     </div>
 
-    {{> Button type='button' text='Login' }}
+    {{> Button type=button.type text=button.text }}
   </form>
 
-  {{> Link text='Sign up?' }}
+  {{> Link src=link.src text=link.text }}
 {{/ Dialog }}

@@ -1,0 +1,11 @@
+<ul class="chat-list">
+  {{# each chats }}
+    <li class="chat-list__item {{#if selected }}chat-list__item_active{{/if}}">
+      {{> Divider ml=10 mr=10 }}
+      {{> ChatCard }}
+      {{# if @last}}
+        {{> Divider ml=10 mr=10 }}
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>

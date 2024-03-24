@@ -1,18 +1,14 @@
 {{#> Dialog }}
   <form class="form">
-    {{> FormTitle text='Registration' }}
+    {{> FormTitle text=title }}
     <div class="form__input-group">
-      {{> FormItem text='Email' name='email' type='text' validation-text='Неверный формат почты' }}
-      {{> FormItem text='Login' name='login' type='text' validation-text='Логин уже существует' }}
-      {{> FormItem text='Name' name='first_name' type='text' }}
-      {{> FormItem text='Surname' name='second_name' type='text' }}
-      {{> FormItem text='Phone' name='phone' type='phone' }}
-      {{> FormItem text='password' name='password' type='password' }}
-      {{> FormItem text='password (again)' type='password' }}
+      {{#each fields}}
+        {{> FormItem name=name text=text type=type validation-text=validation-text }}
+      {{/each}}
     </div>
 
-    {{> Button type='button' text='Register' }}
+    {{> Button type=button.type text=button.text }}
   </form>
 
-  {{> Link text='Login to account' }}
+  {{> Link src=link.src text=link.text }}
 {{/ Dialog }}

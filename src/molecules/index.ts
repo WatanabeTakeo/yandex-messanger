@@ -1,6 +1,6 @@
 import { LoginForm } from "./login-form";
 import { RegistrationForm } from "./registration-form";
 import { ErrorCard } from "./error-card";
-import { MessageCard } from "./message-card";
+import { ChatCard } from "./chat-card";
 
-export { LoginForm, RegistrationForm, ErrorCard, MessageCard };
+export { LoginForm, RegistrationForm, ErrorCard, ChatCard };
