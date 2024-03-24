@@ -1,7 +1,7 @@
 # Онлайн мессенджер
 ## sprint 1
 
-### Используется изменённый шаблон - [Figma template](https://www.figma.com/file/X8GNQmK02psoAq2MfGR9Qp/Chat_external_link-(Copy)?type=design&node-id=0-1&mode=design&t=fByee93OCMjQCrxW-0)
+### Используется шаблон яндекса - [Figma template](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?type=design&node-id=0%3A1&mode=design&t=C6s4VVdCZrkBMX3w-1)
 
 ## Основные страницы чата
 1. [Авторизация](https://ya-mess-ar.netlify.app/login)
